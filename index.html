@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📚 Library</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@100&family=Dancing+Script&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4e4cebd824.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1 id = "heading">Library</h1>
+    <h3 id = "your-books-heading">Your Books</h3>
+    <div id="books-display">
+    </div>
+    <div id="add-book">
+        + Add a Book
+    </div>
+    <div id="overlay">
+        <div id = "foo" class = "form1">
+            <form>
+                <h1 id = "add-book-heading">Add A Book</h1>
+                <div id="input-fields">
+                    <div class = input-field>
+                        <h3>Name</h3>
+                        <input type="text" name = "book-name" id = "name" autocomplete="off" required>
+                    </div>
+                    <div class = input-field>
+                        <h3>Author</h3>
+                        <input type="text" name = "author" id = "author" autocomplete="off" required>
+                    </div>
+                    <div class = input-field>
+                        <h3>Pages</h3>
+                        <input type="number" name = "pages" id = "pages" autocomplete="off" required>
+                    </div>
+                    <div class = input-field>
+                        <h3>Read</h3>
+                        <div id="options">
+                            <div class= "option">
+                                <input type="radio" id="yes" name="read" required>
+                                <div class="btn-like">
+                                    <label for="yes"><i class="fas fa-check"></i></label>
+                                </div>
+
+                            </div>
+                            <div id="line"></div>
+                            <div class = "option">
+                                <input type="radio" id="no" name="read" required>
+                                <div class="btn-like">
+                                    <label for="no"><i class="fas fa-times"></i></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" id = "add-btn">Add.</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
